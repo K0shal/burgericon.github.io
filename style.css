@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+
+background:red;
+
+}
+main{
+
+    padding: 3%;
+    width: 40%;
+    height:100vh;
+}
+.burger{
+    width: 40px;
+    margin: 1%;
+    height: 40px;
+}
+.line{
+    background: #fff;
+    transition-property:transform;
+    transition-duration:1s ;
+    border-radius: 5px;
+    width:100%;
+    height: 30%;
+}
+.two{
+    margin-top: 3%;
+    transition-property:all;
+    transition-duration:400ms;
+    
+   
+}
+.three{
+    margin-top: 3%;
+}
+.nav{
+    color: white;
+    font-weight: bolder;
+    height: 80vh;
+    margin-top: 10%;
+    opacity: 0;
+    width: 60%;
+    transition: all 1s;
+    margin-left: 5%;
+}
+
+.items{
+
+    list-style: none;
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    flex-direction: column;
+    height: 100%;
+    gap: 5%;
+}
+.item{
+    font-family: sans-serif;
+
+    height: 10%;
+}
+.before{
+    background: cyan;
+    position: absolute;
+    width:0%;
+    left:0;
+    top:0;
+
+    z-index: -1;
+    transition: all 400ms ease-in;
+}
+
+.cross1{
+   transform: translateY(13px) rotateZ(45deg);   
+   background:red;
+}
+.cross2{
+ opacity: 0;
+}
+.cross3{
+ transform: translateY(-13px) rotateZ(-45deg);   
+ background: red;
+}
+.dis{
+    width:30%;
+
+}
+.chan{
+opacity: 1;
+    user-select: none;
+}
+@media(max-width:794px){
+    .items{
+font-size:20px;
+    }
+}
